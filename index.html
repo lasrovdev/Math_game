@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body bgcolor="white">
+  <audio src="Songs/correct-ding.mp3"></audio>
+  <audio src="Songs/incorrecto.mp3"></audio>
+  <audio src="Songs/aplausos.mp3"></audio>
+  <div id="barra">
+    <h2>Sumas y restas</h2>
+    <div id="points">
+      <b id="pt">0</b>🌟
+    </div>
+  </div>
+  <div  id="options">
+    <center>
+      <br>
+      <br>
+      <p id="grande">Haz click en un botón</p>
+      <button id="uno">Quiz de 6 preguntas</button>
+      <br>
+      <br>
+      <button  id="dos">Desafío de 6 preguntas</button>
+      <br>
+      <br>
+      <button id="tres">1 pregunta</button>
+      <button id="sol" onclick="dia()">🌞</button>
+  <button id="luna" onclick="nocturno()">🌙</button>
+  
+    </center>
+  </div>
+  <div id="quiz">
+    <progress min="0" max="100" value="0"></progress>
+    <br>
+    <br>
+    <center>
+      <p id="pregunta"><b></b> <b></b> <b></b> =  </p>
+      <input type="number">
+      <button id="comprobar" onclick="comprobar()">Comprobar</button>
+    </center>
+  </div>
+  <div id="secreto">
+    
+  </div>
+  <div id="mensaje">
+    
+  </div>
+  <div id="desafio">
+    <div id="banner">
+      <span id="one">Tú : <b id="tu_pt">0</b></span><span  id="two">Oponente : <b id="op_pt">0</b></span>
+    </div>
+    <p id="pregunta2"><b></b> <b></b> <b></b> =  </p>
+    <input type="number">
+    <button id="comprobar2" onclick="comprobar2()">Comprobar</button>
+  </div>
+  <div id="mensaje2">
+    
+  </div>
+  <div id="unapregunta">
+    <div id="pregunta_banner">Pregunta <span id="premio2">+250🌟</span></div>
+    <br>
+    <p id="pregunta"><b></b> <b></b> <b></b> =  </p>
+    <input type="number"/>
+    <button id="prco" onclick="comprobar_pregunta()">Comprobar</button>
+  </div>
+  <div id="mensaje3"></div>
+  
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+</html>
